@@ -150,7 +150,7 @@ float vibrato_strength = .5;
 float vibrato_rate = 0.125;
 #endif
 
-float polyphony_rate = 0;
+float polyphony_rate = 8;
 
 static bool audio_initialized = false;
 
