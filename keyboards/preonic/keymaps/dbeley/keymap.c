@@ -154,7 +154,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |------+------+------+------+------+------|------+------+------+------+------+------|
 * |      |      |CkTogg|Mus on|MusOff|MidiOn|MidOff|      |      |      |      |      |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
-* |      |      |      |      |      | Brig+  Brig-|      |      |      |      |      |
+* |      |      |      | MOD  | Back | Brig-  Brig+| Next | MOD  |      |      |      |
 * `-----------------------------------------------------------------------------------'
 */
 [_ADJUST] = LAYOUT_preonic_grid(
@@ -162,7 +162,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS, RESET, DEBUG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TERM_ON, TERM_OFF, KC_TRNS, KC_TRNS, KC_DEL, 
         KC_TRNS, KC_TRNS, MU_MOD, AU_ON, AU_OFF, KC_TRNS, KC_TRNS, DF(_QWERTY), DF(_BEPO), DF(_DEFAULT), KC_TRNS, KC_TRNS, 
         KC_TRNS, KC_TRNS, CK_TOGG, MU_ON, MU_OFF, MI_ON, MI_OFF, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_BRIU, KC_BRID, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_WBAK, KC_BRID, KC_BRIU, KC_WFWD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 };
 
 uint32_t layer_state_set_user(uint32_t state) {
