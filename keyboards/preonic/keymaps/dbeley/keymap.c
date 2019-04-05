@@ -110,51 +110,51 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 | F12  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Next |  7   |  8   |  9   |  +   |  /   |  -   |  =   |  [   |  ]   |  \   | PgUp |
+ * | Print|  7   |  8   |  9   |  +   |  /   |  -   |  =   |  [   |  ]   |  \   | PgUp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Vol+ |  4   |  5   |  6   |  -   |  *   |  Ms1 | MsU  | Ms2  | Home | Del  | PgDwn|
+ * | ScLck|  4   |  5   |  6   |  -   |  *   |  Ms1 | MsU  | Ms2  | Home | Del  | PgDwn|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Vol- |  1   |  2   |  3   |  =   |      |  MsL | MsD  | MsR  | End  |  Up  |      |
+ * | Pause|  1   |  2   |  3   |  =   |      |  MsL | MsD  | MsR  | End  |  Up  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Play |  0   |  .   |      |  -   |      |      |  =   |      | Left | Down | Right|
+ * | Lock |  0   |  .   | MOD  | Pl/Pa| Vol- | Vol+ | Mute | MOD  | Left | Down | Right|
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_preonic_grid(
         KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, 
-        KC_MNXT, KC_P7, KC_P8, KC_P9, KC_PPLS, KC_PSLS, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP, 
-        KC_VOLU, KC_P4, KC_P5, KC_P6, KC_PMNS, KC_PAST, KC_BTN1, KC_MS_U, KC_BTN2, KC_HOME, KC_DEL, KC_PGDN, 
-        KC_VOLD, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_TRNS, KC_MS_L, KC_MS_D, KC_MS_R, KC_END, KC_UP, KC_TRNS, 
-        KC_MPLY, KC_P0, KC_PDOT, KC_TRNS, KC_MINS, KC_TRNS, KC_TRNS, KC_EQL, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT),
-/* Raise (Same than Lower)
+        KC_PSCR, KC_P7, KC_P8, KC_P9, KC_PPLS, KC_PSLS, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP, 
+        KC_SLCK, KC_P4, KC_P5, KC_P6, KC_PMNS, KC_PAST, KC_BTN1, KC_MS_U, KC_BTN2, KC_HOME, KC_DEL, KC_PGDN, 
+        KC_PAUS, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_TRNS, KC_MS_L, KC_MS_D, KC_MS_R, KC_END, KC_UP, KC_TRNS, 
+        KC_SLEP, KC_P0, KC_PDOT, KC_TRNS, KC_MPLY, KC_VOLD, KC_VOLU, KC_AUDIO_MUTE, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT),
+/* Raise (Same as Lower)
  * ,-----------------------------------------------------------------------------------.
  * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 | F12  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Next |  7   |  8   |  9   |  +   |  /   |  -   |  =   |  [   |  ]   |  \   | PgUp |
+ * | Print|  7   |  8   |  9   |  +   |  /   |  -   |  =   |  [   |  ]   |  \   | PgUp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Vol+ |  4   |  5   |  6   |  -   |  *   |  Ms1 | MsU  | Ms2  | Home | Del  | PgDwn|
+ * | ScLck|  4   |  5   |  6   |  -   |  *   |  Ms1 | MsU  | Ms2  | Home | Del  | PgDwn|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Vol- |  1   |  2   |  3   |  =   |      |  MsL | MsD  | MsR  | End  |  Up  |      |
+ * | Pause|  1   |  2   |  3   |  =   |      |  MsL | MsD  | MsR  | End  |  Up  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Play |  0   |  .   |      |  -   |      |      |  =   |      | Left | Down | Right|
+ * | Lock |  0   |  .   | MOD  | Pl/Pa| Vol- | Vol+ | Mute | MOD  | Left | Down | Right|
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_preonic_grid(
         KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, 
-        KC_MNXT, KC_P7, KC_P8, KC_P9, KC_PPLS, KC_PSLS, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP, 
-        KC_VOLU, KC_P4, KC_P5, KC_P6, KC_PMNS, KC_PAST, KC_BTN1, KC_MS_U, KC_BTN2, KC_HOME, KC_DEL, KC_PGDN, 
-        KC_VOLD, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_TRNS, KC_MS_L, KC_MS_D, KC_MS_R, KC_END, KC_UP, KC_TRNS, 
-        KC_MPLY, KC_P0, KC_PDOT, KC_TRNS, KC_MINS, KC_TRNS, KC_TRNS, KC_EQL, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT),
+        KC_PSCR, KC_P7, KC_P8, KC_P9, KC_PPLS, KC_PSLS, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP, 
+        KC_SLCK, KC_P4, KC_P5, KC_P6, KC_PMNS, KC_PAST, KC_BTN1, KC_MS_U, KC_BTN2, KC_HOME, KC_DEL, KC_PGDN, 
+        KC_PAUS, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_TRNS, KC_MS_L, KC_MS_D, KC_MS_R, KC_END, KC_UP, KC_TRNS, 
+        KC_SLEP, KC_P0, KC_PDOT, KC_TRNS, KC_MPLY, KC_VOLD, KC_VOLU, KC_AUDIO_MUTE, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT),
 /* Adjust (Lower + Raise)
 * ,-----------------------------------------------------------------------------------.
 * |  M1  |  M2  |  M3  |  M4  |  M5  |  M6  |  M7  |  M8  |  M9  |  M10 |  M11 |  M12 |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
 * |      | Reset| Debug|      |      |      |      |TermOn|TerOff|      |      |  Del |
 * |------+------+------+------+------+-------------+------+------+------+------+------|
-* |      |      |MusMod|Aud on|AudOff|      |      |Qwerty| Bépo |Utilit|      |      |
+* |      |      |MusMod|Aud on|AudOff|      |      |Qwerty| Bépo |Defaul|      |      |
 * |------+------+------+------+------+------|------+------+------+------+------+------|
 * |      |      |CkTogg|Mus on|MusOff|MidiOn|MidOff|      |      |      |      |      |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
-* |      |      |      |      |      |             |      |      |      |      |      |
+* |      |      |      |      |      | Brig+  Brig-|      |      |      |      |      |
 * `-----------------------------------------------------------------------------------'
 */
 [_ADJUST] = LAYOUT_preonic_grid(
@@ -162,7 +162,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS, RESET, DEBUG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TERM_ON, TERM_OFF, KC_TRNS, KC_TRNS, KC_DEL, 
         KC_TRNS, KC_TRNS, MU_MOD, AU_ON, AU_OFF, KC_TRNS, KC_TRNS, DF(_QWERTY), DF(_BEPO), DF(_DEFAULT), KC_TRNS, KC_TRNS, 
         KC_TRNS, KC_TRNS, CK_TOGG, MU_ON, MU_OFF, MI_ON, MI_OFF, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_BRIU, KC_BRID, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 };
 
 uint32_t layer_state_set_user(uint32_t state) {
